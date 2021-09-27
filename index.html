@@ -11,25 +11,33 @@
 </head>
 <body>
         <header>
-            <h1>Nutrição</h1>
+            <h1>Calcule seu IMC</h1>
         </header>
 
         <section >
             <div class="p-3 mb-2 bg-danger text-white">
-                <div class="text-center">                                               
-                    <form>
-                        <label for="lbl_altura">Digite sua altura:</label><br>
-                        <input type="text" id="lbl_altura" name="lbl_altura"><br><br>
-                        <label for="lbl_peso">Digite seu peso</label><br>
-                        <input type="number" id="lbl_peso" name="lbl_peso">
-                    </form>
-                
-                </div>
-            </div>    
-            <div class="text-center">
-                <br>
-                <button type="button" class="btn btn-success">Calcular IMC</button></center>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="entrada" id="nome" ><br><br>
             </div>
+            <div>
+                <label for="peso">Peso (Kg): </label>
+                <input type="text" name="entrada" id="peso" ><br><br>
+            </div>
+            <div>
+                <label for="altura">Altura (Metros):</label>
+                <input type="text" name="entrada" id="altura"><br><br>
+            </div>
+            <label id="calcular">
+                <input type="button" value="Calcular" onclick="calcularImc()"/><br><br>
+              </label>
+           
+              <div id="resultado">
+               <span>Resultado: </span>
+                <span id="imc"></span>
+                <span id="res"></span>
+              </div>
+              </div>
         </section>
 
     <footer>
